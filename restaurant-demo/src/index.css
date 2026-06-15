@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal text-cream font-body antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-gold text-charcoal;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold rounded-full;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply py-20 md:py-28 px-4 md:px-8 lg:px-16;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .gold-divider {
+    @apply w-16 h-px bg-gold mx-auto my-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold text-charcoal font-body font-semibold
+           px-7 py-3.5 tracking-widest uppercase text-xs transition-all duration-300
+           hover:bg-gold-light hover:scale-105 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-gold text-gold font-body font-semibold
+           px-7 py-3.5 tracking-widest uppercase text-xs transition-all duration-300
+           hover:bg-gold hover:text-charcoal cursor-pointer;
+  }
+
+  .section-label {
+    @apply font-body text-gold tracking-[0.3em] uppercase text-xs font-medium;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight;
+  }
+
+  .veg-badge {
+    @apply inline-flex items-center justify-center w-4 h-4 border border-green-600 rounded-sm flex-shrink-0;
+  }
+
+  .nonveg-badge {
+    @apply inline-flex items-center justify-center w-4 h-4 border border-red-600 rounded-sm flex-shrink-0;
+  }
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #C4A35A 0%, #d4b87a 50%, #9a7d3a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-glass {
+    background: rgba(15, 14, 12, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .bg-glass-light {
+    background: rgba(244, 238, 224, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(196, 163, 90, 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

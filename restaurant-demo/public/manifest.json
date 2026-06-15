@@ -1,0 +1,17 @@
+{
+  "name": "Saffron & Spice",
+  "short_name": "Saffron",
+  "description": "Fine dining experience — authentic Indian cuisine with a modern soul",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0e0c",
+  "theme_color": "#C4A35A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
