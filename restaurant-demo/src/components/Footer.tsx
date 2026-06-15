@@ -4,8 +4,8 @@ import { Phone, Mail, MapPin, Instagram, Facebook, Youtube } from 'lucide-react'
 const navCols = [
   {
     heading: 'Explore',
-    links: ['About Us', 'Our Menu', 'Gallery', 'Events & Banquets', 'Reservations'],
-    hrefs: ['#about', '#menu', '#gallery', '#events', '#reservations'],
+    links: ['About Us', 'Our Menu', 'Gallery', 'Events & Banquets', 'Contact'],
+    hrefs: ['#about', '#menu', '#gallery', '#events', '#contact'],
   },
   {
     heading: 'Services',

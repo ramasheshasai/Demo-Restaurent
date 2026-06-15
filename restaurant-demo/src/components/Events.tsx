@@ -115,7 +115,7 @@ export default function Events() {
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary"
           >
-            Send an Enquiry
+            Get in Touch
           </button>
         </motion.div>
       </div>

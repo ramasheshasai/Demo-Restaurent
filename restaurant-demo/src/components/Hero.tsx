@@ -68,16 +68,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex items-center justify-center"
         >
           <button onClick={scrollToMenu} className="btn-primary">
             Explore Our Menu
-          </button>
-          <button
-            onClick={() => document.querySelector('#reservations')?.scrollIntoView({ behavior: 'smooth' })}
-            className="btn-outline"
-          >
-            Book a Table
           </button>
         </motion.div>
       </div>

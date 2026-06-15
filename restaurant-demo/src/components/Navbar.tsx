@@ -57,12 +57,6 @@ export default function Navbar() {
                 {l.label}
               </button>
             ))}
-            <button
-              onClick={() => handleNav('#reservations')}
-              className="btn-primary ml-4"
-            >
-              Reserve a Table
-            </button>
           </nav>
 
           {/* Mobile menu toggle */}
@@ -98,15 +92,6 @@ export default function Navbar() {
                 {l.label}
               </motion.button>
             ))}
-            <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: links.length * 0.07 }}
-              onClick={() => handleNav('#reservations')}
-              className="btn-primary mt-4"
-            >
-              Reserve a Table
-            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
